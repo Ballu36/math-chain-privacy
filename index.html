@@ -60,12 +60,13 @@
 
 <header>
   <h1>Math Chain Privacy Policy</h1>
-  <p class="sub">Android application <code>com.zengothic.mathchain</code> &middot; Effective 16 September 2026</p>
+  <p class="sub">Android application <code>com.zengothic.mathchain</code> &middot; Effective 30 September 2026</p>
 </header>
 
 <div class="lede">
   <p><strong>In one paragraph:</strong> Math Chain has no accounts, no sign-in and no
-  server of ours. We do not receive any information about you. Your progress is saved
+  server of ours. The only thing we receive is a crash report when something goes
+  wrong in the game &mdash; it contains no personal details, and we use it solely to fix bugs. Your progress is saved
   only on your own device. The game is free and shows advertisements, and the Google
   Mobile Ads SDK inside the app collects and shares device information — including your
   Android advertising ID — in order to select, show and measure those ads.</p>
@@ -79,9 +80,29 @@ web version or online service.</p>
 <p>Contact: <a href="mailto:ballurocker36@gmail.com">ballurocker36@gmail.com</a></p>
 
 <h2>2. Information we collect</h2>
-<p><strong>We collect nothing.</strong> Math Chain has no registration, no login, no
-profile, no chat, no leaderboard, no cloud save and no analytics of our own. We operate
-no servers, so no information about you is transmitted to us at any point.</p>
+<p><strong>Only crash reports.</strong> Math Chain has no registration, no login, no
+profile, no chat, no leaderboard, no cloud save and no analytics. We operate no servers
+of our own. The one kind of information that reaches us is a crash report, described
+below.</p>
+
+<h3>Crash reports (Firebase Crashlytics)</h3>
+<p>If the app crashes, or an error breaks part of the game, a crash report is sent to us
+through Google's <strong>Firebase Crashlytics</strong> so that we can find and fix the
+problem. A report contains:</p>
+<ul>
+  <li>the error message and the technical trace of where in the app's code it happened</li>
+  <li>where you were in the game at the time &mdash; for example the level number &mdash; and
+      the last few steps you took in the app</li>
+  <li>device and app details: phone model, Android version, app version, language, and
+      technical state such as free memory and screen orientation</li>
+  <li>a random identifier that Crashlytics creates for this installation of the app, so
+      that repeated reports can be counted; it changes if you reinstall the app</li>
+</ul>
+<p>A crash report does <strong>not</strong> contain your name, email address, account,
+advertising ID, location or anything you have typed, and we never attach any identifier
+of our own. We use crash reports only to fix bugs. Google processes them on our behalf
+as a service provider under the Firebase terms, keeps them for 90 days and then deletes
+them automatically. Google Analytics is switched off for the app.</p>
 
 <h3>Information stored on your device</h3>
 <p>The game keeps your progress in the application's own private storage so you can
@@ -134,15 +155,15 @@ following:</p>
   <li>anything you type or create — there is no chat, no username, no comments and no
       user-generated content anywhere in the game</li>
   <li>push notifications — no notification service is integrated</li>
-  <li>crash reporting or first-party analytics — no crash-reporting or analytics service
-      is configured</li>
+  <li>analytics of how you play — no analytics service is configured, and Google
+      Analytics is switched off</li>
 </ul>
 <p>The app asks for <strong>no permission to anything on your device or about you</strong> —
 nothing that would let it read your location, your files, your camera, your microphone, your
 contacts or your messages. The complete permission list in the installed app is short, and
 every entry is either infrastructure or required by the advertising SDK:</p>
 <ul>
-  <li><code>INTERNET</code> — declared by us, used solely to request advertisements.</li>
+  <li><code>INTERNET</code> — declared by us, used to request advertisements and to send the crash reports described in section 2.</li>
   <li><code>VIBRATE</code> — declared by us, for the optional haptic feedback you can turn
       off in Settings.</li>
   <li><code>ACCESS_NETWORK_STATE</code>, <code>WAKE_LOCK</code>,
@@ -164,7 +185,8 @@ permission Android asks you to approve.</p>
 
 <h2>4. How information is used</h2>
 <ul>
-  <li><strong>By us:</strong> for nothing, because we receive nothing.</li>
+  <li><strong>By us:</strong> crash reports only, used solely to find and fix bugs in the
+      game.</li>
   <li><strong>On your device:</strong> to remember your progress and settings between
       sessions.</li>
   <li><strong>By Google:</strong> to select, deliver, cap the frequency of, and measure
@@ -235,7 +257,8 @@ not see it.</p>
   <tr><td>Google Mobile Ads SDK (AdMob)</td><td>Google</td><td>Requests, displays and measures the interstitial and rewarded ads</td></tr>
   <tr><td>Android advertising ID</td><td>Google</td><td>The resettable identifier the ads SDK uses</td></tr>
   <tr><td>User Messaging Platform (UMP)</td><td>Google</td><td>Presents the consent message where one is required and records the choice</td></tr>
-  <tr><td>Google Mobile Ads measurement components</td><td>Google</td><td>Ships inside the ads SDK and is used for ad conversion measurement. We operate no analytics product and have configured no Firebase project.</td></tr>
+  <tr><td>Google Mobile Ads measurement components</td><td>Google</td><td>Ships inside the ads SDK and is used for ad conversion measurement. We operate no analytics product.</td></tr>
+  <tr><td>Firebase Crashlytics</td><td>Google</td><td>Sends a crash report when the app crashes or hits an error, so we can fix it. No advertising ID and no personal details; see section 2.</td></tr>
   <tr><td>Capacitor and Apache Cordova</td><td>Open source</td><td>The application shell the game runs in. Collects nothing and sends nothing.</td></tr>
 </table>
 </div>
@@ -247,12 +270,14 @@ no customer-support or messaging SDK.</p>
 <p>Math Chain is intended for a <strong>general audience aged 13 and over</strong>. It is
 not directed to children under 13, and it is not enrolled in Google Play's Families
 programme. We do not knowingly collect personal information from children under 13, and
-the app collects no personal information from anyone. If you believe a child has provided
+the app collects no personal information from anyone; crash reports contain none. If you believe a child has provided
 personal information through the app, please contact us at the address in section 1.</p>
 
 <h2>9. Data retention and deletion</h2>
-<p>We hold no data, so there is nothing for us to retain, export or delete, and no
-deletion request to make of us. The saved game on your device is removed when you clear
+<p>The only data we hold is crash reports, which Firebase Crashlytics deletes
+automatically 90 days after they are received. Because a report carries no name, email
+or account, we cannot pick out the reports of a particular person to export or delete
+them earlier. The saved game on your device is removed when you clear
 the app's storage or uninstall the app. If Android backup is switched on, a copy of that
 saved game also sits in your Google account, and it is not deleted by uninstalling &mdash;
 section 6 explains how to delete it and how to stop further copies being made. For
@@ -263,19 +288,21 @@ Google's own privacy tools.</p>
 
 <h2>10. Data security</h2>
 <p>Game data is stored inside the application's private sandbox on your device and is
-protected by Android's application isolation. Because nothing is transmitted to us, there
-is no server-side store of your information that could be breached. Information sent to
-Google by the ads SDK is transmitted over encrypted connections.</p>
+protected by Android's application isolation. The only information sent to us is crash
+reports, which are stored by Google's Firebase under Google's security controls and
+contain no personal details. Crash reports and the
+information sent to Google by the ads SDK are transmitted over encrypted connections.</p>
 
 <h2>11. International transfers</h2>
-<p>We transfer nothing, because we receive nothing. Information collected by Google
-through the advertising SDK may be processed on servers outside your country, including
+<p>Crash reports, and information collected by Google through the advertising SDK, may
+be processed on servers outside your country, including
 in the United States, under Google's own safeguards and privacy policy.</p>
 
 <h2>12. Your rights</h2>
 <p>Depending on where you live, you may have rights to access, correct, delete or
-restrict the use of personal information, or to object to it. Because Math Chain sends us
-no information at all, there is nothing for us to act on — the practical controls
+restrict the use of personal information, or to object to it. Math Chain sends us
+nothing but crash reports, which contain no name, email or account and so cannot be
+matched to you; they are deleted automatically after 90 days. The practical controls
 available to you are those in section 6, and any request concerning information held by
 Google should be directed to Google. If you are unsure, write to us at the address in
 section 1 and we will help as far as we are able.</p>
@@ -292,7 +319,7 @@ notes on Google Play.</p>
 Email: <a href="mailto:ballurocker36@gmail.com">ballurocker36@gmail.com</a></p>
 
 <footer>
-  <p>Math Chain &middot; <code>com.zengothic.mathchain</code> &middot; Effective 16 September 2026.
+  <p>Math Chain &middot; <code>com.zengothic.mathchain</code> &middot; Effective 30 September 2026.
   This page contains no advertising, no analytics, no tracking scripts and no cookies.</p>
 </footer>
 
