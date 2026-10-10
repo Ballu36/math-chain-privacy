@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Math Chain Privacy Policy</title>
-<meta name="description" content="Privacy Policy for the Android game Math Chain (com.zengothic.mathchain): what the app and the Google Mobile Ads SDK collect, and the choices you have.">
+<meta name="description" content="Privacy Policy for the game Math Chain on Android and iPhone (com.zengothic.mathchain): what the app and the Google Mobile Ads SDK collect, and the choices you have.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://ballu36.github.io/math-chain-privacy/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310483E'/%3E%3Crect x='9' y='6' width='14' height='20' rx='3' fill='%23F8F2DF' stroke='%23C9962B' stroke-width='2'/%3E%3C/svg%3E">
@@ -60,7 +60,7 @@
 
 <header>
   <h1>Math Chain Privacy Policy</h1>
-  <p class="sub">Android application <code>com.zengothic.mathchain</code> &middot; Effective 30 September 2026</p>
+  <p class="sub">Android and iPhone application <code>com.zengothic.mathchain</code> &middot; Effective 10 October 2026</p>
 </header>
 
 <div class="lede">
@@ -69,12 +69,14 @@
   wrong in the game &mdash; it contains no personal details, and we use it solely to fix bugs. Your progress is saved
   only on your own device. The game is free and shows advertisements, and the Google
   Mobile Ads SDK inside the app collects and shares device information — including your
-  Android advertising ID — in order to select, show and measure those ads.</p>
+  Android advertising ID, or on iPhone Apple's advertising identifier only if you allow
+  tracking — in order to select, show and measure those ads. Optional in-app purchases are
+  paid through the App Store or Google Play; we never see your payment details.</p>
 </div>
 
 <h2>1. Who this policy is from</h2>
 <p>Math Chain is published by <strong>Zengothic</strong>, an independent developer. This
-policy applies to the Math Chain Android application (package
+policy applies to the Math Chain application for Android and iPhone (identifier
 <code>com.zengothic.mathchain</code>) and to nothing else. There is no Math Chain website,
 web version or online service.</p>
 <p>Contact: <a href="mailto:ballurocker36@gmail.com">ballurocker36@gmail.com</a></p>
@@ -131,6 +133,7 @@ governs what it does with it. Typically this includes:</p>
 <table>
   <tr><th>Information</th><th>Why it is processed</th><th>Leaves the device</th></tr>
   <tr><td>Android advertising ID (a resettable identifier)</td><td>Ad selection, frequency capping, measurement, fraud prevention</td><td>Yes — to Google</td></tr>
+  <tr><td>iPhone: Apple's advertising identifier (IDFA), <strong>only if you tap Allow</strong> on the &ldquo;Allow tracking?&rdquo; prompt</td><td>Same as above. If you choose Ask App Not to Track, it is never shared and ads are not personalised with it</td><td>Only if allowed — to Google</td></tr>
   <tr><td>IP address</td><td>Approximate (country/region-level) location, fraud prevention</td><td>Yes — to Google</td></tr>
   <tr><td>Device and app information: model, operating-system version, language, app version, screen and network characteristics</td><td>Selecting and formatting an ad your device can display</td><td>Yes — to Google</td></tr>
   <tr><td>Ad interaction events: that an ad was requested, shown, viewed, closed, or clicked</td><td>Measurement, billing and fraud prevention</td><td>Yes — to Google</td></tr>
@@ -150,8 +153,9 @@ following:</p>
       location permission of any kind</li>
   <li>camera, microphone, photos, files, contacts, calendar or call/SMS data — none of
       these permissions is requested</li>
-  <li>health, financial or payment information — the game has no in-app purchases and
-      contains no billing library</li>
+  <li>health, financial or payment information — optional in-app purchases (coin packs,
+      Remove Ads) are processed entirely by Apple's App Store or Google Play; the game
+      receives only a confirmation of what was bought, never your card or account details</li>
   <li>anything you type or create — there is no chat, no username, no comments and no
       user-generated content anywhere in the game</li>
   <li>push notifications — no notification service is integrated</li>
@@ -240,6 +244,8 @@ not see it.</p>
       Ads</em> (the exact path varies by manufacturer). Deleting the ID stops apps from
       receiving it at all.</li>
   <li><strong>Turn off ad personalisation</strong> — the same Android settings screen.</li>
+  <li><strong>On iPhone</strong> — <em>Settings &rarr; Privacy &amp; Security &rarr; Tracking</em>
+      lets you turn tracking off for Math Chain (or all apps) at any time.</li>
   <li><strong>Remove the saved game from your device</strong> — clear the app's storage,
       or uninstall it.</li>
   <li><strong>Remove the backup copy too</strong> — if Android backup is switched on,
@@ -258,7 +264,8 @@ not see it.</p>
   <tr><td>Android advertising ID</td><td>Google</td><td>The resettable identifier the ads SDK uses</td></tr>
   <tr><td>User Messaging Platform (UMP)</td><td>Google</td><td>Presents the consent message where one is required and records the choice</td></tr>
   <tr><td>Google Mobile Ads measurement components</td><td>Google</td><td>Ships inside the ads SDK and is used for ad conversion measurement. We operate no analytics product.</td></tr>
-  <tr><td>Firebase Crashlytics</td><td>Google</td><td>Sends a crash report when the app crashes or hits an error, so we can fix it. No advertising ID and no personal details; see section 2.</td></tr>
+  <tr><td>Firebase Crashlytics (Android only)</td><td>Google</td><td>Sends a crash report when the app crashes or hits an error, so we can fix it. No advertising ID and no personal details; see section 2. Not included in the iPhone app.</td></tr>
+  <tr><td>App Store In-App Purchase (iPhone)</td><td>Apple</td><td>Processes optional purchases. Apple handles payment; the game only learns what was bought.</td></tr>
   <tr><td>Capacitor and Apache Cordova</td><td>Open source</td><td>The application shell the game runs in. Collects nothing and sends nothing.</td></tr>
 </table>
 </div>
